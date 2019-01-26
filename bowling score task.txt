@@ -1,8 +1,7 @@
 given one try
-when know down 7 balls
+when knock down 7 balls
 then get 7 score
 
 given two try
-when one try know down 5, the other try know down 4
+when one try knock down 5, the other try knock down 4
 then get 9 score
-
