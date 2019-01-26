@@ -5,3 +5,11 @@ then get 7 score
 given two try
 when one try knock down 5, the other try knock down 4
 then get 9 score
+
+given one turn
+when knock down 10 balls at first try
+then get strike
+
+given one turn
+when two tries knocked down 10 balls totally
+then get spare
