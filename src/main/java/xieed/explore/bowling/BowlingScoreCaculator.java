@@ -4,13 +4,13 @@ class BowlingScoreCaculator {
 
   private final static int ALL_BALL_QUANTITY = 10;
 
-  String caculateScoreInOneTurn(int firstTryBalls, int secondTryBalls) {
-    if(firstTryBalls == ALL_BALL_QUANTITY){
-      return "STRIKE";
+  Turn createTurn(Try firstTry, Try secondTry) {
+    if(firstTry.getScore() == ALL_BALL_QUANTITY){
+      return new StrikeTurn();
     }
-    if((firstTryBalls + secondTryBalls) == ALL_BALL_QUANTITY){
-      return "SPARE";
+    if((firstTry.getScore() + secondTry.getScore()) == ALL_BALL_QUANTITY){
+      return new SpareTurn();
     }
-    return String.valueOf(firstTryBalls + secondTryBalls);
+    return new MissTurn(firstTry, secondTry);
   }
 }
