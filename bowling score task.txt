@@ -8,8 +8,13 @@ then get 9 score
 
 given one turn
 when knock down 10 balls at first try
-then get strike
+then get strikeTurn
 
 given one turn
 when two tries knocked down 10 balls totally
-then get spare
+then get spareTurn
+
+given one turn
+when two tries knocked down less than 10 balls totally
+then get missTurn
+
