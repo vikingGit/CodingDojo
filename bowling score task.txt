@@ -18,3 +18,10 @@ given one turn
 when two tries knocked down less than 10 balls totally
 then get missTurn
 
+given spare turn
+when next try knocked down 8 balls
+then get 18 score
+
+given strike turn,
+when next two tries knocked 8,2 balls separately
+then get 20 score
