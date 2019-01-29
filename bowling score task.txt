@@ -25,3 +25,7 @@ then get 18 score
 given strike turn,
 when next two tries knocked 8,2 balls separately
 then get 20 score
+
+given multiple turn
+when scores are [10,8,2,9,0]
+then return one strike turn, one spare turn and last miss turn
