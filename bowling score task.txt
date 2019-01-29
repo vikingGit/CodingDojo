@@ -26,6 +26,10 @@ given strike turn,
 when next two tries knocked 8,2 balls separately
 then get 20 score
 
-given multiple turn
+given 3 turns
 when scores are [10,8,2,9,0]
 then return one strike turn, one spare turn and last miss turn
+
+given 7 turns
+when all scores are 10
+then get 210 score

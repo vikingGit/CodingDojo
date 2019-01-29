@@ -5,20 +5,10 @@ import static xieed.explore.bowling.BowlingScoreCaculator.ALL_BALL_QUANTITY;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BowlingTurnCreator {
-
-  static Turn createTurn(Try firstTry, Try secondTry, Try nextFirstTry, Try nextSecondTry) {
-    if(firstTry.getScore() == ALL_BALL_QUANTITY){
-      return new StrikeTurn(nextFirstTry, nextSecondTry);
-    }
-    if((firstTry.getScore() + secondTry.getScore()) == ALL_BALL_QUANTITY){
-      return new SpareTurn(firstTry, secondTry, nextFirstTry);
-    }
-    return new MissTurn(firstTry, secondTry);
-  }
+class BowlingTurnCreator {
 
   static List<Turn> createTurns(int[] scores) {
-    ArrayList<Turn> turns = new ArrayList<Turn>();
+    ArrayList<Turn> turns = new ArrayList<>();
     int i = 0;
     while (true) {
       if (scores[i] == ALL_BALL_QUANTITY) {
