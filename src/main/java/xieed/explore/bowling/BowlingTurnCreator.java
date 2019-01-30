@@ -33,27 +33,4 @@ class BowlingTurnCreator {
     }
     return turns;
   }
-
-
-//  static List<Turn> createTurns(int[] scores) {
-//    ArrayList<Turn> turns = new ArrayList<>();
-//    for(int i = 0; i <scores.length -2; i++){
-//      if (scores[i] == ALL_BALL_QUANTITY) {
-//        turns.add(new StrikeTurn(new Try(scores[i + 1]), new Try(scores[i + 2])));
-//      }
-//    }
-//
-//    for(int i = 0; i <scores.length -2; i=i+2){
-//      if (scores[i] + scores[i + 1] == ALL_BALL_QUANTITY) {
-//        turns.add(new StrikeTurn(new Try(scores[i + 1]), new Try(scores[i + 2])));
-//      }
-//    }
-//
-//    for(int i = 0; i <scores.length -1; i=i+2){
-//      if (scores[i] + scores[i + 1] < ALL_BALL_QUANTITY) {
-//        turns.add(new MissTurn(new Try(scores[i]), new Try(scores[i + 1])));
-//      }
-//    }
-//    return turns;
-//  }
 }
