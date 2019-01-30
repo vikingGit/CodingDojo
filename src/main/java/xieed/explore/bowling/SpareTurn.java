@@ -10,7 +10,7 @@ class SpareTurn extends Turn {
     this.nextTry = nextTry;
   }
 
-  int caculateScore() {
+  int calculateScore() {
     return ALL_BALL_QUANTITY + this.nextTry.getScore();
   }
 }

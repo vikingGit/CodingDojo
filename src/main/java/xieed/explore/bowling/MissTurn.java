@@ -9,7 +9,7 @@ class MissTurn extends Turn{
     this.secondTry = secondTry;
   }
 
-  int caculateScore() {
+  int calculateScore() {
     return this.firstTry.getScore() + this.secondTry.getScore();
   }
 }

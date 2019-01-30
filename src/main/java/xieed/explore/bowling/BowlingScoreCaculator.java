@@ -10,7 +10,7 @@ class BowlingScoreCaculator {
     List<Turn> turns = BowlingTurnCreator.createTurns(scores);
     int sum = 0;
     for (Turn turn : turns) {
-      sum += turn.caculateScore();
+      sum += turn.calculateScore();
     }
     return sum;
   }
