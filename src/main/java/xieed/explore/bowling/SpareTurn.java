@@ -4,13 +4,9 @@ import static xieed.explore.bowling.BowlingScoreCaculator.ALL_BALL_QUANTITY;
 
 class SpareTurn extends Turn {
 
-  private final Try firstTry;
-  private final Try secondTry;
   private Try nextTry;
 
-  public SpareTurn(Try firstTry, Try secondTry, Try nextTry) {
-    this.firstTry = firstTry;
-    this.secondTry = secondTry;
+  SpareTurn(Try nextTry) {
     this.nextTry = nextTry;
   }
 

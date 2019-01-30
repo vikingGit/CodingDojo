@@ -7,7 +7,7 @@ public class SpareTurnTest {
 
   @Test
   public void should_return_18_score_when_next_try_knock_down_8_balls_given_spare_turn() throws Exception {
-    SpareTurn turn = new SpareTurn(new Try(8), new Try(2), new Try(8));
+    SpareTurn turn = new SpareTurn(new Try(8));
     Assert.assertEquals(18, turn.caculateScore());
   }
 }
